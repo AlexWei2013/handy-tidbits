@@ -34,7 +34,7 @@ echo "PID_FILE: $PID_FILE"
 
 if [ -f "$PID_FILE" ]; then
         echo "pid file exists - killing existing process" | tee -a "$LOG"
-        kill -9 `cat $PID_FILE` | tee -a $LOG
+        kill -SIGTERM `cat $PID_FILE` | tee -a $LOG
 fi
 
 cd "$APPLICATION_NAME"
