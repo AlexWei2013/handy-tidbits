@@ -58,4 +58,4 @@ function settitle() {
 }
  
 PROMPT_COMMAND='git_branch; settitle; history -a;'
-export PS1='\u@\H \[\e${gitcolor}\]${gitbranch}\[\e[32;1m\]\w\[\e[0m\]\n\t \$ ' 
+export PS1='\u@\H \[\e${gitcolor}\]${gitbranch}\[\e[0;32m\]\w\[\e[0m\]\n\t \$ ' 

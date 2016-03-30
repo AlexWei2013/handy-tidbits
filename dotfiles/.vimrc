@@ -1,8 +1,10 @@
 syntax on
 set autoindent
 set number
+set tabstop=4
+set softtabstop=0
+set noexpandtab
+set shiftwidth=4
 set hlsearch
 set background=dark
-let g:solarized_termcolors=256
-let g:solarized_termtrans=1
 colorscheme solarized
